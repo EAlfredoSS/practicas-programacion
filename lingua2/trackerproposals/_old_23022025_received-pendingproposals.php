@@ -1,0 +1,865 @@
+<?php 
+/*ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);*/
+
+//$mi_identificador = 4588;
+session_start();
+$mi_identificador=$_SESSION['orden2017'];
+
+
+require('../templates/header_simplified.html');
+require('../files/bd.php');
+require('../funcionesphp/funciones_idiomas_usuario.php');
+
+ 
+//sacamos time shift
+
+$query77="SELECT timeshift FROM mentor2009 WHERE orden='$mi_identificador' ";
+$result77=mysqli_query($link,$query77);
+if(!mysqli_num_rows($result77))
+		die("User unregistered 1.");
+$fila77=mysqli_fetch_array($result77);
+
+$my_timeshift=$fila77['timeshift'];
+
+
+//sacamos hora de corte segun zona horaria
+
+// Crear un objeto DateTime con la fecha y hora actuales
+$fechaHoraActual = new DateTime();
+
+// Formatear la fecha y hora en el formato 'YYYY-MM-DD HH:MM:SS'
+$fechaHoraFormateada = $fechaHoraActual->format('Y-m-d H:i:s');
+$fechaHoraUTC0 =$fechaHoraFormateada;
+
+//$fechaHoraUTC0 = '2025-01-28 12:00:00'; // Fecha y hora en UTC0
+$zonaHoraria = $my_timeshift; // Zona horaria de ejemplo
+
+$tiempoUnix = obtenerTiempoUnix($fechaHoraUTC0, $zonaHoraria);
+
+//echo "<br><br><br>El tiempo Unix para la fecha $fechaHoraUTC0 en la zona horaria $zonaHoraria es: $tiempoUnix<br>";
+
+// Consulta SQL para obtener las clases
+$query = "
+SELECT t.*, m.*
+FROM tracker t
+INNER JOIN mentor2009 m
+ON t.id_user_teacher=m.orden
+WHERE t.id_user_teacher ='" . $mi_identificador . "'  AND proposal_accepted_teacher=0 AND cancelled=0  AND end_time_unix>$tiempoUnix
+ORDER BY t.start_time_unix ASC";
+
+// Ejecutamos la consulta
+$result = mysqli_query($link, $query);
+
+// Contamos cuántos resultados hay
+$nuevos = mysqli_num_rows($result);
+
+
+//echo "$query";
+
+
+if (!$nuevos) {
+    die("No sessions for this user yet");
+    //for($i=0;$i<$nuevos;$i++)
+//{
+	//$fila=mysqli_fetch_array($result);
+	
+	//$id_of_class=$fila['id_tracking'];	
+	//$creation_timestamp=$fila['created_timestamp'];
+	//$recurrent=$fila['created_from_recurrent'];
+	//$id_student=$fila['id_user_student'];
+	//$time_shift_student=$fila['time_shift_student'];
+	//$dateofstart_local=$fila['date_start_local'];
+	//$dateofend_local=$fila['date_end_local'];
+	//$unixtimestart=$fila['start_time_unix'];
+	//$unixtimeend=$fila['end_time_unix'];
+	//$duration_min=$fila['session_lenght_minutes'];
+	//$language_to_teach=$fila['language_taught'];
+	//$hourly_price=$fila['hourly_rate_original'];
+	//$total_price=$fila['price_session_total'];
+	//$descriptionofsession=$fila['description_session'];
+	//$teacher_accepted=$fila['proposal_accepted_teacher'];
+	//$teacher_accepted_timestamp=$fila['proposal_accepted_timestamp'];
+	//$session_paid=$fila['paid'];
+	//$session_paid_timestamp=$fila['timestamp_paid'];
+	//$cancelled=$fila['cancelled'];
+	//$fee_percentage=$fila['price_fee_percentage'];
+	//$amount_received_by_teacher=$total_price*(100-$fee_percentage)/100;
+	
+	//$style_1='';
+//}
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next classes as teacher</title>
+	
+	
+<style type="text/css">
+
+.tooltip-container {
+  position: relative; /*relative: los elementos se posicionan de forma relativa a su posición normal.*/
+  display: inline-block;
+}
+
+.tooltip-text {
+  font-size: 16px;
+  visibility: hidden;
+  width: 380px;
+  background-color: #000;
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 50px;
+  position: absolute;
+  z-index: 1;
+  top: 30%; /* Posiciona el tooltip bajo del elemento */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 0.75; 
+}
+</style>
+	
+	
+	
+<style>
+.forum-links {
+    background-color: #fff;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    width: 180%;
+    margin-left: -40%;
+    margin-top: -5.3%;
+}
+
+.forum-links ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start; /* Alinear elementos al inicio */
+    padding: 0;
+    margin: 0;
+    padding-left: 450px; /* Espacio desde el borde izquierdo del contenedor */
+}
+
+.forum-links ul li {
+    text-align: center;
+    margin-right: 20px; /* Espacio entre los elementos */
+}
+
+.forum-links ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #999;
+    font-weight: normal;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.forum-links ul li.active a {
+    color: #e65f00; /* Color del enlace activo */
+    font-weight: bold;
+    position: relative;
+}
+
+.forum-links ul li.active a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #e65f00; /* Línea roja debajo del enlace activo */
+}
+
+
+        .usr-question {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 1px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 1px;
+        }
+
+        .usr-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-top: 10px;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .usr-img img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+        .usr_quest {
+            width: 75%;
+        }
+
+        .usr_quest h3, .usr_quest h4, .usr_quest h6 {
+            margin: 10px 0;
+            width:100%;
+        }
+
+        .usr_quest h3 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .usr_quest h4 {
+            color: #555;
+        }
+
+        .usr_quest h6 {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .usr_quest ul.job-dt {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .usr_quest ul.job-dt li {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 8px;
+        }
+
+        .job-dt li a {
+            background-color: #51a5fb;
+            border-radius: 2px;
+        }
+
+        .quest-posted-time {
+            font-size: 12px;
+            color: #aaa;
+            margin-top: 9%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .fa{
+			font-size: 15px;
+		}
+
+        .class-details {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .class-details h4 {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .class-details p {
+            font-size: 14px;
+            color: #666;
+        }
+        .forum-page{
+			margin-bottom:20px;
+		}
+		/* Botones de aceptar y denegar */
+		.btn-aceptar{
+			background-color:#53d690;
+			cursor: pointer;
+		}
+		.btn-denegar{
+			background-color: #e77667;
+			cursor: pointer;
+		}
+
+		.notification {
+		    position: fixed;
+		    bottom: 20px;
+		    right: 20px;
+		    background-color: #53d690; /* Verde para indicar éxito */
+		    color: white;
+		    padding: 15px 20px;
+		    border-radius: 8px;
+		    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+		    font-size: 16px;
+		    z-index: 1000;
+		    opacity: 0;
+		    transform: translateY(20px);
+		    transition: opacity 0.4s ease-out, transform 0.4s ease-out; /* Suavizar el efecto de entrada/salida */
+		}
+
+		.notification.show {
+		    opacity: 1;
+		    transform: translateY(0);
+		}
+
+		.notification.decline {
+		    background-color: #e77667;
+		}
+		
+		/* Media query para pantallas pequeñas (hasta 991px) */
+		@media (max-width: 991px) {
+			.forum-links {
+				position: relative; 
+				top: auto; 
+				left: auto; 
+				width: 140%; 
+				background-color: #fff; 
+				height: auto; 
+				padding: 10px 20px; 
+				opacity: 1; 
+				visibility: visible; 
+				margin-left:-20%;
+				margin-top: -8.7%;
+			}
+			.forum-questions .usr_quest {
+				width: 60%;
+			}
+		}
+    </style>
+</head>
+
+<?php
+
+$query109="SELECT * FROM tracker WHERE id_user_teacher ='" . $mi_identificador . "'  AND proposal_accepted_teacher=0 AND cancelled=0 AND start_time_unix>$tiempoUnix";
+$result109 = mysqli_query($link, $query109);
+$n_received_proposals=mysqli_num_rows($result109);
+
+$query109="SELECT * FROM tracker WHERE id_user_teacher ='" . $mi_identificador . "'  AND proposal_accepted_teacher=2 AND cancelled=0 AND start_time_unix>$tiempoUnix";
+$result109 = mysqli_query($link, $query109);
+$n_next_lessons=mysqli_num_rows($result109);
+
+$query109="SELECT * FROM tracker WHERE id_user_teacher ='" . $mi_identificador . "'  AND proposal_accepted_teacher=2 AND cancelled=0 AND paid=1 AND releasefunds=0 AND start_time_unix<=$tiempoUnix";
+$result109 = mysqli_query($link, $query109);
+$n_past_lessons_not_released=mysqli_num_rows($result109);
+
+
+
+
+ 
+?>
+
+<body>
+    <div class="wrapper">
+        <section class="forum-sec">
+            <div class="container">
+                <div class="forum-links">
+                    <ul>
+                        <li><a href="./received-futureclasses.php" title="">Next lessons as teacher (<?php echo $n_next_lessons; ?>)</a></li>
+                        <li  class="active"><a href="./received-pendingproposals.php" title="">Received proposals as teacher (<?php echo $n_received_proposals; ?>)</a></li>
+                        <li><a href="./received-pendingreleasefunds.php" title="">Pending fund releases (<?php echo $n_past_lessons_not_released; ?>)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="forum-page">
+            <div class="container">
+                <div class="forum-questions-sec" style="width: 100%">
+                    <div class="forum-questions">
+                        <?php
+						
+						
+						
+						
+							//my languages
+							$my_langs_array_multidim=array( array() );
+							$my_langs_full_name_array_multidim=array( array() ); 
+							$my_langs_level_array_multidim=array( array() ); 
+							$my_langs_forshare_array_multidim=array( array() );
+							$my_langs_price_array_multidim=array( array() );
+							$my_langs_typeofexchange_array_multidim=array( array() );
+							$my_langs_priceorexchangetext_array_multidim=array( array() );
+							$my_langs_level_image_array_multidim=array( array() );
+							$my_langs_2letters_array_multidim=array( array() );	
+							
+							//learn languages
+	
+							$learn_langs_array_multidim=array( array() );
+							$learn_langs_full_name_array_multidim=array( array() ); 
+							$learn_langs_level_array_multidim=array( array() ); 
+							$learn_langs_forshare_array_multidim=array( array() );
+							$learn_langs_price_array_multidim=array( array() );
+							$learn_langs_typeofexchange_array_multidim=array( array() );
+							$learn_langs_priceorexchangetext_array_multidim=array( array() );
+							$learn_langs_level_image_array_multidim=array( array() );
+							$learn_langs_2letters_array_multidim=array( array() );
+						
+						
+							//aquí sacamos las lenguas del profe
+
+							list($my_langs_array_multidim["$mi_identificador"], $my_langs_full_name_array_multidim["$mi_identificador"], 
+							$my_langs_level_array_multidim["$mi_identificador"], 
+							$my_langs_forshare_array_multidim["$mi_identificador"], 	
+							$my_langs_price_array_multidim["$mi_identificador"], $my_langs_typeofexchange_array_multidim["$mi_identificador"], 
+							$my_langs_priceorexchangetext_array_multidim["$mi_identificador"], $my_langs_level_image_array_multidim["$mi_identificador"], 
+							$my_langs_2letters_array_multidim["$mi_identificador"])
+							= lenguas_que_conoce_usuario($mi_identificador,$link);
+							
+							list($learn_langs_array_multidim["$mi_identificador"], $learn_langs_full_name_array_multidim["$mi_identificador"], 
+							$learn_langs_level_array_multidim["$mi_identificador"], 
+							$learn_langs_forshare_array_multidim["$mi_identificador"], 	$learn_langs_price_array_multidim["$mi_identificador"], 
+							$learn_langs_typeofexchange_array_multidim["$mi_identificador"], 
+							$learn_langs_priceorexchangetext_array_multidim["$mi_identificador"], $learn_langs_level_image_array_multidim["$mi_identificador"], 
+							$learn_langs_2letters_array_multidim["$mi_identificador"])
+							= lenguas_que_quiere_estudiar_usuario($mi_identificador,$link);
+						
+						
+                        while ($fila = mysqli_fetch_array($result)) {
+                            // Datos de la clase
+							/*
+                            $id_of_class = $fila['id_tracking'];
+                            $language_to_teach = $fila['language_taught'];
+                            $descriptionofsession = $fila['description_session'];
+                            $duration_min = $fila['session_lenght_minutes'];
+                            $total_price = $fila['price_session_total'];
+							
+							*/
+							
+							
+                            $unixtimestart = $fila['start_time_unix'];
+							$id_of_class=$fila['id_tracking'];	
+							$creation_timestamp=$fila['created_timestamp'];
+							$recurrent=$fila['created_from_recurrent']; if($recurrent==1){$recurrent='Yes';} else{$recurrent='No';}
+							$id_student=$fila['id_user_student'];
+							$time_shift_student=$fila['time_shift_student'];
+							$dateofstart_local=$fila['date_start_local'];
+							$dateofend_local=$fila['date_end_local'];
+							$unixtimestart=$fila['start_time_unix'];
+							$unixtimeend=$fila['end_time_unix'];
+							$duration_min=$fila['session_lenght_minutes'];
+							$language_to_teach=$fila['language_taught'];
+							$hourly_price=$fila['hourly_rate_original'];
+							$total_price=$fila['price_session_total'];
+							$descriptionofsession=$fila['description_session'];
+							$teacher_accepted=$fila['proposal_accepted_teacher'];
+							$teacher_accepted_timestamp=$fila['proposal_accepted_timestamp'];
+							$session_paid=$fila['paid'];
+							$session_paid_timestamp=$fila['timestamp_paid'];
+							
+							$session_releasefunds=$fila['releasefunds'];
+							
+							$cancelled=$fila['cancelled'];
+							$fee_percentage=$fila['price_fee_percentage'];
+							$amount_received_by_teacher=$total_price*(100-$fee_percentage)/100;
+							
+							$por_internet_o_presencial=$fila['onlineonsite'];
+							$local_encuentro=$fila['id_local'];
+							
+							
+							// sacamos huso horario
+							$query99="SELECT timeshift FROM mentor2009 WHERE orden='$id_student' ";
+							$result99=mysqli_query($link,$query99);
+							if(!mysqli_num_rows($result99))
+									die("User unregistered 1.");
+							$fila99=mysqli_fetch_array($result99);
+
+							$time_shift_student=$fila99['timeshift'];
+							
+							
+	
+
+							//sacamos la foto
+							$extension = $fila['fotoext'];
+							$path_photo="../uploader/upload_pic/thumb_$id_student"."."."$extension";
+
+							//echo "</br></br>$path_photo</br></br>";
+
+							if ( !file_exists($path_photo) ) :
+								$path_photo="../uploader/default.jpg";
+							endif;
+							
+							
+		
+							
+							//aquí sacamos las lenguas del alumno
+
+						
+							//estudiante
+							list($my_langs_array_multidim["$id_student"], $my_langs_full_name_array_multidim["$id_student"], 
+							$my_langs_level_array_multidim["$id_student"], 
+							$my_langs_forshare_array_multidim["$id_student"], 	
+							$my_langs_price_array_multidim["$id_student"], $my_langs_typeofexchange_array_multidim["$id_student"], 
+							$my_langs_priceorexchangetext_array_multidim["$id_student"], $my_langs_level_image_array_multidim["$id_student"], 
+							$my_langs_2letters_array_multidim["$id_student"])
+							= lenguas_que_conoce_usuario($id_student,$link);
+							
+							list($learn_langs_array_multidim["$id_student"], $learn_langs_full_name_array_multidim["$id_student"], 
+							$learn_langs_level_array_multidim["$id_student"], 
+							$learn_langs_forshare_array_multidim["$id_student"], 	$learn_langs_price_array_multidim["$id_student"], 
+							$learn_langs_typeofexchange_array_multidim["$id_student"], 
+							$learn_langs_priceorexchangetext_array_multidim["$id_student"], $learn_langs_level_image_array_multidim["$id_student"], 
+							$learn_langs_2letters_array_multidim["$id_student"])
+							= lenguas_que_quiere_estudiar_usuario($id_student,$link);
+							
+
+							$idiomas_comunes = array_intersect($my_langs_array_multidim["$id_student"], $my_langs_array_multidim["$mi_identificador"]);
+							
+							//con esta línea lo que hacemos es borrar los valores vacíos y reorganizar el array
+							$idiomas_comunes = array_values(array_filter($idiomas_comunes));
+							
+							//print_r($idiomas_comunes); 
+							
+							$nombre_idioma='';
+							// sacamos el nombre completo del idioma sin recurrir a hacer llamada a la bbdd
+							for($rr=0;$rr<count($idiomas_comunes);$rr++)
+							{
+								$key_search=array_search($idiomas_comunes[$rr],$my_langs_array_multidim["$id_student"] );
+								
+								switch ($my_langs_level_array_multidim["$id_student"][$key_search])
+								{
+									case 0:
+										$level_aux='Level unknown';
+										break;
+									case 1:
+										$level_aux='Beginner';
+										break;
+									case 2:
+										$level_aux='A1';
+										break;
+									case 3:
+										$level_aux='A2';
+										break;
+									case 4:
+										$level_aux='B1';
+										break;
+									case 5:
+										$level_aux='B2';
+										break;
+									case 6:
+										$level_aux='C1';
+										break;
+									case 7:
+										$level_aux='C2';
+										break;
+								}
+								
+								$nombre_idioma.=" ".$my_langs_full_name_array_multidim["$id_student"][$key_search]." (".$level_aux.") "."&nbsp;&nbsp; ";
+							}
+							
+							$nombre_idioma=trim($nombre_idioma); 
+							
+							if(empty($nombre_idioma)){$nombre_idioma='No common languages';}
+							//echo "$nombre_idioma";
+							
+							
+							//sacamos el nombre del idioma que quiere trabajar el estudiante
+														
+							$key_search2=array_search($language_to_teach,$learn_langs_array_multidim["$id_student"] );
+							
+							//echo "<br>$language_to_teach: $key_search2<br>";
+							
+							//print_r($learn_langs_array_multidim["$id_student"]);
+							//print_r($learn_langs_full_name_array_multidim["$id_student"]); 
+							
+							$language_to_teach_fullname=$learn_langs_full_name_array_multidim["$id_student"]["$key_search2"];
+							$level_language_to_teach=$learn_langs_level_array_multidim["$id_student"]["$key_search2"]; 
+
+							switch ($level_language_to_teach) 
+							{
+								case 0:
+									$level_language_to_teach_2='Level unknown';
+									break;
+								case 1:
+									$level_language_to_teach_2='Beginner';
+									break;
+								case 2:
+									$level_language_to_teach_2='A1';
+									break;
+								case 3:
+									$level_language_to_teach_2='A2';
+									break;
+								case 4:
+									$level_language_to_teach_2='B1';
+									break;
+								case 5:
+									$level_language_to_teach_2='B2';
+									break;
+								case 6:
+									$level_language_to_teach_2='C1';
+									break;
+								case 7:
+									$level_language_to_teach_2='C2';
+									break;
+							}
+
+
+							
+							
+							//sacamos nombre del estudiante
+							
+							
+							$query77="SELECT nombre FROM mentor2009 WHERE orden='$id_student' ";
+							$result77=mysqli_query($link,$query77);
+							if(!mysqli_num_rows($result77))
+									die("User unregistered 1.");
+							$fila77=mysqli_fetch_array($result77);
+
+							$student_name=$fila77['nombre'];
+							$palabras = explode (" ", $student_name);
+							$student_name=ucfirst($palabras[0]);
+							
+							
+							//en caso de que haya quitado el estudiante el idioma de su lista de idiomas que quiere aprender
+							if(empty($language_to_teach_fullname))
+								$cadena_idioma_nivel="$language_to_teach ($level_language_to_teach_2)";
+							else
+								$cadena_idioma_nivel="$language_to_teach_fullname ($level_language_to_teach_2)"; 
+							
+							//online o bien onsite
+							if($por_internet_o_presencial==1)
+							{
+									$cadena_idioma_nivel.=" - Online";							
+							}
+							else if($por_internet_o_presencial==2 AND is_numeric($local_encuentro) )
+							{
+									$query212="SELECT * FROM locales WHERE id_local=$local_encuentro"; 
+											
+									$result212=mysqli_query($link,$query212);
+									$fila212=mysqli_fetch_array($result212);
+									$nombre_establecimiento=$fila212['name_local_google'];
+									$direccion_establecimiento=$fila212['full_address_google'];
+									$ciudad_establecimiento=$fila212['city_google'];
+											
+									$cadena_idioma_nivel.=" - Onsite in $ciudad_establecimiento: $nombre_establecimiento";
+							}
+							
+							
+
+                            echo "<div class=\"usr-question\">";
+                            echo "<div class=\"usr-img\"><a href=\"../user/u.php?identificador=$id_student\"><img src=\"$path_photo\" alt=\"Student Image\"></a>
+							<br><center style=\"margin-top:85%; font-size: 80%\" >$student_name</center>
+							</div>";
+                            echo "<div class=\"usr_quest\">";
+                            echo "<h3 class=\"class-name\" data-id=\"$id_of_class\" style=\"color: #000;\"> $cadena_idioma_nivel</h3>";
+                            echo "<h4>$descriptionofsession</h4>";
+                            echo "<h6><i class=\"far fa-hourglass\"></i> $duration_min min &nbsp;&nbsp;&nbsp;&nbsp;
+							<i class=\"fas fa-coins\"></i> $total_price € 
+							&nbsp;&nbsp;&nbsp;&nbsp;<i class=\"fas fa-comment\"></i>&nbsp; $nombre_idioma</h6>";
+
+							
+							echo "<ul class=\"job-dt\">";	
+							
+							//echo "rel: $session_releasefunds - paid: $session_paid ";
+							
+							?>
+            				    <ul class="quest-tags">
+								    <li><a class="btn-aceptar" style="background-color:#53d690;" data-url="./teacheracceptdecline.php?trackid=<?php echo "$id_of_class"; ?>&action=2" >Accept</a></li>
+								    <li><a class="btn-denegar" style="background-color: #e77667;" data-url="./teacheracceptdecline.php?trackid=<?php echo "$id_of_class"; ?>&action=1">Decline</a></li>
+            				        <!-- Elemento de notificación -->
+            				        <div id="notification" class="notification">Your action was successful!</div>
+							    </ul>
+            				<?php
+							
+							if($session_paid==0)
+							{
+								echo "<li><a href=\"#\" title=\"\" style=\"background-color:#b2b2b2;\">Waiting for student to make deposit</a></li>";
+
+							}
+							else if($session_releasefunds==0 AND $session_paid==1)
+							{
+								echo "<li><a href=\"#\" title=\"\">Student made the deposit</a></li>";
+
+							}
+							else if($session_releasefunds==1 AND $session_paid==1)
+							{
+								echo "<li><a href=\"#\" title=\"\" style=\"background-color:#53d690;\" >Student released the deposit</a></li>";
+							}
+							echo "</ul>";
+							echo "</div>";							
+							
+							
+							?>
+							
+								<div class="tooltip-container" style="color:#b2b2b2; margin: -10px 0 0 0; align: center;">
+																
+																	 <i style="color:#b2b2b2;margin-left: 800%;margin-top: 10px;font-size:20px;" class="fas fa-info-circle"></i> 
+																	<span class="tooltip-text" style="font-size: 12px;">
+																	
+																	
+																	<?php  
+																	
+																	
+																		// Ejemplo de uso
+																		$tiempoUnix_clase = $unixtimestart; // Hora Unix en UTC0 (ejemplo)
+																		//$zonaHoraria = 'America/Argentina/Buenos_Aires'; // Zona horaria de ejemplo
+
+																		$fechaHoraFormateada2 = obtenerFechaHora($tiempoUnix_clase, $zonaHoraria);
+																		//echo "La fecha y hora correspondiente a la hora Unix $tiempoUnix en la zona horaria $zonaHoraria es: $fechaHoraFormateada";
+																	
+																		$fechaHoraFormateada2_utc0=obtenerFechaHora($tiempoUnix_clase, 'Europe/London');
+																		
+																		$fechaHoraFormateada2_student = obtenerFechaHora($tiempoUnix_clase, $time_shift_student);
+																	
+																	
+																	if($por_internet_o_presencial==2 AND is_numeric($local_encuentro) )
+																	{
+																		$direccion_completa="Address:<br>$nombre_establecimiento<br>$direccion_establecimiento<br>$ciudad_establecimiento<br><br>";
+																	}
+																	
+																		echo "Additional information: <br><br>
+																		
+																		$direccion_completa																	
+																		
+																		My time zone: $my_timeshift<br>
+																		My partner's time zone: $time_shift_student<br><br>
+																		
+																		Start time(my local time): $fechaHoraFormateada2<br>
+																		Start time (my partner's local time): $fechaHoraFormateada2_student<br>
+																		Start time(GMT0 - Greenwich time): $fechaHoraFormateada2_utc0<br>
+																		Duration: $duration_min min<br><br>
+																																				
+																		Lesson ID: #$id_of_class	<br>
+																		Student ID: #$id_student<br>
+																		Language code: $language_to_teach<br>
+																		Lesson description: $descriptionofsession<br>
+																		Created from serie: $recurrent<br><br>
+																		
+																		Netto amount: $amount_received_by_teacher&euro;<br>
+																		Brutto amount: $total_price&euro; ($hourly_price&euro;/h)<br>
+																														
+																	";	 ?></span> 
+																
+								</div>
+								
+								<br><br> 
+							
+							<?php
+							
+                            echo "<span class=\"quest-posted-time\"><i class=\"fa fa-clock-o\"></i> " . $fechaHoraFormateada2 . " $zonaHoraria</span>";
+                            echo "<div class=\"class-details\" id=\"details-class$id_of_class\" style=\"display:none;\">";
+                            echo "<h4>Detalles de la Clase $id_of_class</h4>";
+                            echo "<p>Información detallada sobre la clase. Aquí puedes agregar más detalles o información extra.</p>";
+                            echo "</div>";
+                            echo "</div>";
+                        }
+                        ?>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <?php
+			require('../templates/footer.php');
+		?>
+    </div>
+
+    <script type="text/javascript" src="../public/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../public/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+		//Boton de aceptar y denegar
+		const btnAceptars = document.querySelectorAll('.btn-aceptar');
+    	const btnDenegars = document.querySelectorAll('.btn-denegar');
+    	let notification = document.querySelector('.notification');
+        
+		document.addEventListener('DOMContentLoaded', function () {
+            var classNames = document.querySelectorAll('.class-name');
+            classNames.forEach(function (className) {
+                className.addEventListener('click', function () {
+                    var classId = className.getAttribute('data-id');
+                    var classDetails = document.getElementById('details-class' + classId);
+                    if (classDetails.style.display === 'none' || classDetails.style.display === '') {
+                        classDetails.style.display = 'block';
+                    } else {
+                        classDetails.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+		// Si no existe, la creamos dinámicamente
+		if (!notification) {
+        	notification = document.createElement('div');
+        	notification.classList.add('notification');
+        	document.body.appendChild(notification); // La agregamos al body o el contenedor que prefieras
+    	}
+
+		// Procesar cada botón de "Aceptar"
+		btnAceptars.forEach(function(btnAceptar) {
+        	btnAceptar.addEventListener('click', function(event) {
+        	    event.preventDefault(); // Prevenir que el enlace realice la acción de navegación
+        	    console.log('Botón Aceptar presionado'); 
+        	    const url = btnAceptar.getAttribute('data-url'); // Obtener la URL del atributo data-url
+
+        	    fetch(url, { // Realizar la solicitud HTTP sin redirigir (usando fetch)
+        	        method: 'GET',
+        	    })
+        	    .then(response => response.text())
+        	    .then(data => {
+        	        console.log('Respuesta recibida:', data); // Mostrar la respuesta del servidor si es necesario
+        	    })
+        	    .catch(error => {
+        	        console.error('Error en la solicitud:', error); // Manejo de errores
+        	    });
+
+        	    // Mostrar la notificación
+        	    notification.classList.add('show');
+        	    notification.style.display = 'block';
+
+        	    // Ocultar la notificación después de 3 segundos
+        	    setTimeout(() => {
+        	        notification.classList.remove('show');
+        	        notification.style.display = 'none';
+        	    }, 3000);
+
+        	    // Redirigir a la URL
+        	    setTimeout(function() { window.location.href = btnAceptar.href;}, 100);
+        	});
+    	});
+		// Procesar cada botón de "Denegar"
+		btnDenegars.forEach(function(btnDenegar) {
+    	    btnDenegar.addEventListener('click', function(event) {
+    	        event.preventDefault(); // Prevenir que el enlace realice la acción de navegación
+    	        console.log('Botón Denegar presionado');
+    	        const url = btnDenegar.getAttribute('data-url'); // Obtener la URL desde el atributo data-url
+
+    	        fetch(url, { // Realizar la solicitud HTTP sin redirigir (usando fetch)
+    	            method: 'GET',
+    	        })
+    	        .then(response => response.text())
+    	        .then(data => {
+    	            console.log('Respuesta recibida:', data);
+    	        })
+    	        .catch(error => {
+    	            console.error('Error en la solicitud:', error);
+    	        });
+
+    	        // Mostrar la notificación (puedes personalizar el mensaje)
+    	        notification.classList.add('show', 'decline');
+    	        notification.style.display = 'block';
+    	        notification.innerText = 'You have declined the session!';
+
+    	        // Ocultar la notificación después de 3 segundos
+    	        setTimeout(() => {
+    	            notification.classList.remove('show', 'decline');
+    	            notification.style.display = 'none';
+    	        }, 4000);
+
+    	        // Redirigir a la URL
+    	        setTimeout(function() { window.location.href = btnDenegar.href;}, 600);
+    	    });
+    	});
+
+    </script>
+</body>
+
+</html>
