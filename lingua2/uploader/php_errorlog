@@ -1,7 +1,0 @@
-[19-Dec-2019 16:24:37 CST6CDT] PHP Warning:  require(../bd.php): failed to open stream: No such file or directory in /home/customer/www/languageexchanges.com/public_html/uploader/upload.php on line 497
-[19-Dec-2019 16:24:37 CST6CDT] PHP Fatal error:  require(): Failed opening required '../bd.php' (include_path='.:/usr/local/php56/pear') in /home/customer/www/languageexchanges.com/public_html/uploader/upload.php on line 497
-[19-Dec-2019 16:26:48 CST6CDT] PHP Warning:  require(../bd.php): failed to open stream: No such file or directory in /home/customer/www/languageexchanges.com/public_html/uploader/upload.php on line 497
-[19-Dec-2019 16:26:48 CST6CDT] PHP Fatal error:  require(): Failed opening required '../bd.php' (include_path='.:/usr/local/php56/pear') in /home/customer/www/languageexchanges.com/public_html/uploader/upload.php on line 497
-[19-Dec-2019 16:27:18 CST6CDT] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, string given in /home/customer/www/languageexchanges.com/public_html/files/bd.php on line 19
-[19-Dec-2019 16:27:18 CST6CDT] PHP Warning:  mysql_query() expects parameter 2 to be resource, object given in /home/customer/www/languageexchanges.com/public_html/uploader/upload.php on line 499
-[19-Dec-2019 16:27:18 CST6CDT] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, null given in /home/customer/www/languageexchanges.com/public_html/uploader/upload.php on line 500
