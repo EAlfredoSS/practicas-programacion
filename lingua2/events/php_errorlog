@@ -1,0 +1,126 @@
+[30-Dec-2019 12:05:15 CST6CDT] PHP Fatal error:  require_once(): Failed opening required './files/selecteventtype.html' (include_path='.:/usr/local/php56/pear') in /home/customer/www/languageexchanges.com/public_html/events/createevent.php on line 178
+[30-Dec-2019 12:07:56 CST6CDT] PHP Fatal error:  require_once(): Failed opening required './files/selecteventtype.html' (include_path='.:/usr/local/php56/pear') in /home/customer/www/languageexchanges.com/public_html/events/createevent.php on line 174
+[30-Dec-2019 12:08:50 CST6CDT] PHP Fatal error:  require_once(): Failed opening required './files/selecteventtype.html' (include_path='.:/usr/local/php56/pear') in /home/customer/www/languageexchanges.com/public_html/events/createevent.php on line 174
+[30-Dec-2019 12:41:39 CST6CDT] PHP Fatal error:  require(): Failed opening required '../../files/bd.php' (include_path='.:/usr/local/php56/pear') in /home/customer/www/languageexchanges.com/public_html/events/createevent.php on line 4
+[30-Dec-2019 12:42:03 CST6CDT] PHP Fatal error:  require(): Failed opening required '../../files/bd.php' (include_path='.:/usr/local/php56/pear') in /home/customer/www/languageexchanges.com/public_html/events/createevent.php on line 4
+[30-Dec-2019 12:42:39 CST6CDT] PHP Fatal error:  require(): Failed opening required '../../files/bd.php' (include_path='.:/usr/local/php56/pear') in /home/customer/www/languageexchanges.com/public_html/events/createevent.php on line 4
+[30-Dec-2019 13:29:53 CST6CDT] PHP Parse error:  syntax error, unexpected ':' in /home/customer/www/languageexchanges.com/public_html/events/createevent.php on line 20
+[30-Dec-2019 15:40:48 CST6CDT] PHP Parse error:  syntax error, unexpected ':' in /home/customer/www/languageexchanges.com/public_html/events/createevent.php on line 55
+[30-Dec-2019 15:41:29 CST6CDT] PHP Parse error:  syntax error, unexpected ':' in /home/customer/www/languageexchanges.com/public_html/events/createevent.php on line 55
+[30-Dec-2019 15:56:03 CST6CDT] PHP Fatal error:  require(): Failed opening required '../../intercambio-de-idiomas/bd.php' (include_path='.:/usr/local/php56/pear') in /home/customer/www/languageexchanges.com/public_html/events/users_selector.php on line 6
+[31-Dec-2019 05:35:44 CST6CDT] PHP Fatal error:  require(): Failed opening required './ajax_comment_widget.php' (include_path='.:/usr/local/php56/pear') in /home/customer/www/languageexchanges.com/public_html/events/comment_widget.php on line 62
+[31-Dec-2019 05:36:48 CST6CDT] PHP Fatal error:  require(): Failed opening required 'bd.php' (include_path='.:/usr/local/php56/pear') in /home/customer/www/languageexchanges.com/public_html/events/ajax_comment_widget.php on line 26
+[31-Dec-2019 05:47:11 CST6CDT] PHP Fatal error:  require(): Failed opening required './bd.php' (include_path='.:/usr/local/php56/pear') in /home/customer/www/languageexchanges.com/public_html/events/eventdisplayfbtodos.php on line 5
+[10-Jan-2020 05:49:46 CST6CDT] PHP Fatal error:  Call to undefined function isnumeric() in /home/customer/www/languageexchanges.com/public_html/events/createevent.php on line 35
+[09-May-2020 11:01:12 CST6CDT] PHP Parse error:  syntax error, unexpected '$city4' (T_VARIABLE) in /home/customer/www/languageexchanges.com/public_html/events/lookforparticipants.php on line 5
+[10-May-2020 09:14:19 CST6CDT] PHP Fatal error:  Cannot redeclare encode() (previously declared in /home/customer/www/languageexchanges.com/public_html/events/lookforparticipants.php:122) in /home/customer/www/languageexchanges.com/public_html/events/lookforparticipants.php on line 122
+[10-May-2020 09:34:59 CST6CDT] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in /home/customer/www/languageexchanges.com/public_html/events/lookforparticipants.php on line 132
+[10-May-2020 09:54:16 CST6CDT] PHP Parse error:  syntax error, unexpected '<' in /home/customer/www/languageexchanges.com/public_html/events/lookforparticipants.php on line 153
+[10-May-2020 10:18:54 CST6CDT] PHP Parse error:  syntax error, unexpected '}' in /home/customer/www/languageexchanges.com/public_html/events/lookforparticipants2.php on line 188
+[10-May-2020 11:14:00 CST6CDT] PHP Parse error:  syntax error, unexpected '<' in /home/customer/www/languageexchanges.com/public_html/events/lookforparticipants2.php on line 220
+[10-May-2020 11:14:28 CST6CDT] PHP Parse error:  syntax error, unexpected end of file in /home/customer/www/languageexchanges.com/public_html/events/lookforparticipants2.php on line 263
+[10-May-2020 11:15:00 CST6CDT] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/customer/www/languageexchanges.com/public_html/events/lookforparticipants2.php on line 249
+[10-May-2020 11:15:14 CST6CDT] PHP Fatal error:  Class 'friasaitor-4@yahoo.es' not found in /home/customer/www/languageexchanges.com/public_html/events/lookforparticipants2.php on line 221
+[22-Sep-2020 14:34:26 CST6CDT] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/customer/www/languageexchanges.com/public_html/events/showallupcomingevents.php on line 235
+[22-Sep-2020 14:34:28 CST6CDT] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/customer/www/languageexchanges.com/public_html/events/showallupcomingevents.php on line 235
+[22-Sep-2020 14:50:58 CST6CDT] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/customer/www/languageexchanges.com/public_html/events/showallupcomingevents.php on line 235
+[22-Sep-2020 14:51:02 CST6CDT] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/customer/www/languageexchanges.com/public_html/events/showallupcomingevents.php on line 235
+[22-Sep-2020 14:51:03 CST6CDT] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/customer/www/languageexchanges.com/public_html/events/showallupcomingevents.php on line 235
+[22-Sep-2020 14:51:04 CST6CDT] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/customer/www/languageexchanges.com/public_html/events/showallupcomingevents.php on line 235
+[22-Sep-2020 14:51:04 CST6CDT] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/customer/www/languageexchanges.com/public_html/events/showallupcomingevents.php on line 235
+[22-Sep-2020 14:51:05 CST6CDT] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/customer/www/languageexchanges.com/public_html/events/showallupcomingevents.php on line 235
+[22-Sep-2020 14:51:05 CST6CDT] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/customer/www/languageexchanges.com/public_html/events/showallupcomingevents.php on line 235
+[22-Sep-2020 14:51:05 CST6CDT] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/customer/www/languageexchanges.com/public_html/events/showallupcomingevents.php on line 235
+[22-Sep-2020 15:08:31 CST6CDT] PHP Fatal error:  Cannot use [] for reading in /home/customer/www/languageexchanges.com/public_html/events/showallupcomingevents.php on line 174
+[22-Sep-2020 16:08:58 CST6CDT] PHP Parse error:  syntax error, unexpected '$query24' (T_VARIABLE), expecting ',' or ';' in /home/customer/www/languageexchanges.com/public_html/events/showallupcomingevents.php on line 32
+[22-Sep-2020 16:16:54 CST6CDT] PHP Parse error:  syntax error, unexpected ';', expecting ']' in /home/customer/www/languageexchanges.com/public_html/events/showallupcomingevents.php on line 38
+[22-Sep-2020 16:17:19 CST6CDT] PHP Parse error:  syntax error, unexpected ';', expecting ']' in /home/customer/www/languageexchanges.com/public_html/events/showallupcomingevents.php on line 38
+[22-Sep-2020 16:17:57 CST6CDT] PHP Parse error:  syntax error, unexpected end of file in /home/customer/www/languageexchanges.com/public_html/events/showallupcomingevents.php on line 498
+[29-Jan-2021 22:53:13 UTC] PHP Fatal error:  'break' not in the 'loop' or 'switch' context in /home/customer/www/languageexchanges.com/public_html/events/createevent.php on line 200
+[29-Jan-2021 23:16:44 UTC] PHP Parse error:  syntax error, unexpected 'is' (T_STRING) in /home/customer/www/languageexchanges.com/public_html/events/lookforparticipants.php on line 298
+[22-Apr-2021 18:42:10 UTC] PHP Parse error:  syntax error, unexpected 'Recommended' (T_STRING) in /home/customer/www/dev2.languageexchanges.com/public_html/events/lookforparticipants.php on line 317
+[23-Apr-2021 18:27:18 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/customer/www/dev2.languageexchanges.com/public_html/events/lookforparticipants.php on line 337
+[25-Apr-2021 19:58:09 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/customer/www/dev2.languageexchanges.com/public_html/events/radaruserevent.php on line 92
+[28-Apr-2021 15:08:12 UTC] PHP Fatal error:  require(): Failed opening required '../../emailtemplates/email.php' (include_path='.:/usr/local/php73/pear') in /home/customer/www/dev2.languageexchanges.com/public_html/events/lookforparticipantssendmessagescode.php on line 249
+[28-Apr-2021 15:12:47 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SMTP has a deprecated constructor in /home/customer/www/dev2.languageexchanges.com/public_html/emailtemplates/class.smtp.php on line 24
+[28-Apr-2021 15:12:47 UTC] PHP Fatal error:  Cannot redeclare readTemplateFile() (previously declared in /home/customer/www/dev2.languageexchanges.com/public_html/emailtemplates/email.php:44) in /home/customer/www/dev2.languageexchanges.com/public_html/emailtemplates/email.php on line 44
+[28-Apr-2021 19:40:07 UTC] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in /home/customer/www/dev2.languageexchanges.com/public_html/events/showallupcomingevents_corto2.php on line 14
+[28-Apr-2021 19:40:59 UTC] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in /home/customer/www/dev2.languageexchanges.com/public_html/events/showallupcomingevents_corto3.php on line 14
+[28-Apr-2021 19:41:47 UTC] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in /home/customer/www/dev2.languageexchanges.com/public_html/events/showallupcomingevents_corto4.php on line 14
+[28-Apr-2021 20:03:26 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/customer/www/dev2.languageexchanges.com/public_html/events/showallupcomingevents_corto12.php on line 61
+[28-Apr-2021 20:04:29 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/customer/www/dev2.languageexchanges.com/public_html/events/showallupcomingevents_corto13.php on line 61
+[28-Apr-2021 20:24:51 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/customer/www/dev2.languageexchanges.com/public_html/events/showallupcomingevents_corto20.php on line 69
+[28-Apr-2021 20:57:41 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in /home/customer/www/dev2.languageexchanges.com/public_html/events/showallupcomingevents_corto27.php on line 101
+[30-Apr-2021 11:01:50 UTC] PHP Parse error:  syntax error, unexpected 'margin' (T_STRING), expecting ',' or ';' in /home/customer/www/dev2.languageexchanges.com/public_html/events/radaruserevent.php on line 375
+[30-Apr-2021 16:14:21 UTC] PHP Parse error:  syntax error, unexpected 'divcentrado' (T_STRING), expecting ',' or ';' in /home/customer/www/dev2.languageexchanges.com/public_html/events/radaruserevent.php on line 375
+[30-Apr-2021 16:14:27 UTC] PHP Parse error:  syntax error, unexpected 'divcentrado' (T_STRING), expecting ',' or ';' in /home/customer/www/dev2.languageexchanges.com/public_html/events/radaruserevent.php on line 375
+[30-Apr-2021 16:14:38 UTC] PHP Parse error:  syntax error, unexpected 'divcentrado' (T_STRING), expecting ',' or ';' in /home/customer/www/dev2.languageexchanges.com/public_html/events/radaruserevent.php on line 375
+[30-Apr-2021 16:17:53 UTC] PHP Parse error:  syntax error, unexpected 'margin' (T_STRING), expecting ',' or ';' in /home/customer/www/dev2.languageexchanges.com/public_html/events/radaruserevent.php on line 375
+[30-Apr-2021 16:18:34 UTC] PHP Parse error:  syntax error, unexpected 'margin' (T_STRING), expecting ',' or ';' in /home/customer/www/dev2.languageexchanges.com/public_html/events/radaruserevent.php on line 375
+[01-May-2021 09:45:36 UTC] PHP Parse error:  syntax error, unexpected 'margin' (T_STRING), expecting ',' or ';' in /home/customer/www/dev2.languageexchanges.com/public_html/events/radaruserevent.php on line 627
+[01-May-2021 09:45:39 UTC] PHP Parse error:  syntax error, unexpected 'margin' (T_STRING), expecting ',' or ';' in /home/customer/www/dev2.languageexchanges.com/public_html/events/radaruserevent.php on line 627
+[01-May-2021 09:46:21 UTC] PHP Parse error:  syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ',' or ';' in /home/customer/www/dev2.languageexchanges.com/public_html/events/radaruserevent.php on line 627
+[01-May-2021 09:46:22 UTC] PHP Parse error:  syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ',' or ';' in /home/customer/www/dev2.languageexchanges.com/public_html/events/radaruserevent.php on line 627
+[01-May-2021 10:10:08 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/customer/www/dev2.languageexchanges.com/public_html/events/radaruserevent.php on line 682
+[01-May-2021 10:12:48 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/customer/www/dev2.languageexchanges.com/public_html/events/radaruserevent.php on line 682
+[01-May-2021 10:13:26 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/customer/www/dev2.languageexchanges.com/public_html/events/radaruserevent.php on line 682
+[01-May-2021 10:13:58 UTC] PHP Parse error:  syntax error, unexpected '?', expecting end of file in /home/customer/www/dev2.languageexchanges.com/public_html/events/radaruserevent.php on line 684
+[01-May-2021 10:14:11 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/customer/www/dev2.languageexchanges.com/public_html/events/radaruserevent.php on line 686
+[01-May-2021 10:51:20 UTC] PHP Parse error:  syntax error, unexpected 'display' (T_STRING), expecting ',' or ';' in /home/customer/www/dev2.languageexchanges.com/public_html/events/radaruserevent.php on line 626
+[01-May-2021 10:51:57 UTC] PHP Parse error:  syntax error, unexpected 'display' (T_STRING), expecting ',' or ';' in /home/customer/www/dev2.languageexchanges.com/public_html/events/radaruserevent.php on line 626
+[01-May-2021 10:57:12 UTC] PHP Parse error:  syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ',' or ';' in /home/customer/www/dev2.languageexchanges.com/public_html/events/radaruserevent.php on line 626
+[01-May-2021 10:57:32 UTC] PHP Parse error:  syntax error, unexpected 'container' (T_STRING), expecting ',' or ';' in /home/customer/www/dev2.languageexchanges.com/public_html/events/radaruserevent.php on line 626
+[01-May-2021 12:32:29 UTC] PHP Parse error:  syntax error, unexpected 'text' (T_STRING), expecting ',' or ';' in /home/customer/www/dev2.languageexchanges.com/public_html/events/radaruserevent.php on line 634
+[01-May-2021 15:13:01 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/customer/www/dev2.languageexchanges.com/public_html/events/radaruserevent.php on line 682
+[01-May-2021 15:24:44 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/customer/www/dev2.languageexchanges.com/public_html/events/radaruserevent.php on line 642
+[01-May-2021 15:25:08 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/customer/www/dev2.languageexchanges.com/public_html/events/radaruserevent.php on line 642
+[01-May-2021 15:25:11 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/customer/www/dev2.languageexchanges.com/public_html/events/radaruserevent.php on line 642
+[01-May-2021 19:55:55 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/customer/www/dev2.languageexchanges.com/public_html/events/radaruserevent.php on line 653
+[01-May-2021 19:59:22 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/customer/www/dev2.languageexchanges.com/public_html/events/radaruserevent.php on line 646
+[01-May-2021 19:59:27 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/customer/www/dev2.languageexchanges.com/public_html/events/radaruserevent.php on line 646
+[01-May-2021 20:00:17 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/customer/www/dev2.languageexchanges.com/public_html/events/radaruserevent.php on line 650
+[01-May-2021 20:00:25 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/customer/www/dev2.languageexchanges.com/public_html/events/radaruserevent.php on line 650
+[06-May-2021 11:05:37 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/customer/www/dev2.languageexchanges.com/public_html/events/lookforparticipantssendmessagescode.php on line 16
+[12-May-2021 14:27:47 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/customer/www/dev2.languageexchanges.com/public_html/events/eventdetails.php on line 242
+[26-May-2021 15:32:23 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/customer/www/dev2.languageexchanges.com/public_html/events/makerecurrentshowinfo5.php on line 158
+[26-May-2021 15:33:04 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/customer/www/dev2.languageexchanges.com/public_html/events/makerecurrentshowinfo6.php on line 158
+[27-May-2021 16:20:34 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/customer/www/dev2.languageexchanges.com/public_html/events/makerecurrentshowinfo8.php on line 159
+[27-May-2021 16:27:05 UTC] PHP Parse error:  syntax error, unexpected 'Y' (T_STRING), expecting ',' or ';' in /home/customer/www/dev2.languageexchanges.com/public_html/events/makerecurrentshowinfo9.php on line 169
+[27-May-2021 16:49:19 UTC] PHP Parse error:  syntax error, unexpected '%' in /home/customer/www/dev2.languageexchanges.com/public_html/events/makerecurrentshowinfo10.php on line 166
+[02-Jul-2021 12:43:37 UTC] PHP Parse error:  syntax error, unexpected '!' in /home/customer/www/dev2.languageexchanges.com/public_html/events/createevent.php on line 533
+[03-Jul-2021 19:13:42 UTC] PHP Recoverable fatal error:  Object of class mysqli could not be converted to string in /home/customer/www/dev2.languageexchanges.com/public_html/events/prueba7.php on line 23
+[03-Jul-2021 19:14:20 UTC] PHP Recoverable fatal error:  Object of class mysqli_result could not be converted to string in /home/customer/www/dev2.languageexchanges.com/public_html/events/prueba8.php on line 23
+[07-Jul-2021 19:10:37 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ')' in /home/customer/www/dev2.languageexchanges.com/public_html/events/createevent.php on line 224
+[12-Nov-2021 20:02:08 UTC] PHP Fatal error:  Cannot redeclare readTemplateFile() (previously declared in /home/customer/www/languageexchanges.com/public_html/emailtemplates/email.php:44) in /home/customer/www/languageexchanges.com/public_html/emailtemplates/email.php on line 44
+[18-Nov-2021 14:02:44 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/customer/www/languageexchanges.com/public_html/events/lookforparticipantssendmessagescode.php on line 140
+[01-May-2024 20:08:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function each() in /home/customer/www/languageexchanges.com/public_html/emailtemplates/class.smtp.php:326
+Stack trace:
+#0 /home/customer/www/languageexchanges.com/public_html/emailtemplates/class.phpmailer.php(506): SMTP->Data('Date: Wed, 1 Ma...')
+#1 /home/customer/www/languageexchanges.com/public_html/emailtemplates/class.phpmailer.php(375): PHPMailer->SmtpSend('Date: Wed, 1 Ma...', '<!doctype html>...')
+#2 /home/customer/www/languageexchanges.com/public_html/emailtemplates/email.php(33): PHPMailer->Send()
+#3 /home/customer/www/languageexchanges.com/public_html/events/lookforparticipantssendmessagescode.php(387): sendEmail('Lingua2 Languag...', 'notifications@l...', 'messages@langua...', 'Marcos invites ...', '<!doctype html>...')
+#4 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/emailtemplates/class.smtp.php on line 326
+[21-Sep-2024 19:07:50 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + int in /home/customer/www/languageexchanges.com/public_html/events/makerecurrentexe.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/events/makerecurrentexe.php on line 18
+[21-Sep-2024 19:27:51 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + int in /home/customer/www/languageexchanges.com/public_html/events/makerecurrentexe.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/events/makerecurrentexe.php on line 18
+[28-Sep-2024 15:46:20 UTC] PHP Parse error:  syntax error, unexpected variable "$amountprice1" in /home/customer/www/languageexchanges.com/public_html/events/radaruserevent.php on line 499
+[17-Jan-2026 09:22:05 UTC] PHP Deprecated:  strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/events/createevent.php on line 158
+[17-Jan-2026 09:26:23 UTC] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in /home/customer/www/languageexchanges.com/public_html/events/eventdetails.php on line 139
+[17-Jan-2026 09:27:05 UTC] PHP Deprecated:  Function strftime() is deprecated in /home/customer/www/languageexchanges.com/public_html/events/makerecurrentshowinfo.php on line 193
+[17-Jan-2026 09:27:05 UTC] PHP Deprecated:  Function strftime() is deprecated in /home/customer/www/languageexchanges.com/public_html/events/makerecurrentshowinfo.php on line 193
+[17-Jan-2026 13:00:24 UTC] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in /home/customer/www/languageexchanges.com/public_html/events/eventdetails.php on line 139
+[17-Jan-2026 15:40:07 UTC] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in /home/customer/www/languageexchanges.com/public_html/events/eventdetails.php on line 139
+[17-Jan-2026 16:02:04 UTC] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in /home/customer/www/languageexchanges.com/public_html/events/eventdetails.php on line 139
+[17-Jan-2026 16:23:43 UTC] PHP Deprecated:  strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/events/createevent.php on line 158
+[19-Jan-2026 10:00:06 UTC] PHP Deprecated:  strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/events/createevent.php on line 158
+[19-Jan-2026 10:05:51 UTC] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in /home/customer/www/languageexchanges.com/public_html/events/eventdetails.php on line 139
+[31-Jan-2026 09:33:37 UTC] PHP Deprecated:  strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/events/createevent.php on line 158
+[31-Jan-2026 09:34:24 UTC] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in /home/customer/www/languageexchanges.com/public_html/events/eventdetails.php on line 139
+[31-Jan-2026 13:38:42 UTC] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in /home/customer/www/languageexchanges.com/public_html/events/eventdetails.php on line 139
+[31-Jan-2026 13:39:37 UTC] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in /home/customer/www/languageexchanges.com/public_html/events/eventdetails.php on line 139
