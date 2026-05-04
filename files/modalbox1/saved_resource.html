@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)https://fiddle.jshell.net/WV5e7/show/light/ -->
+<html><head>
+  
+
+  <script type="text/javascript" src="./css_modalboxtextarea/jquery-git.js.descarga"></script>
+
+    <link rel="stylesheet" type="text/css" href="./css_modalboxtextarea/result-light.css">
+
+      <link rel="stylesheet" type="text/css" href="./css_modalboxtextarea/bootstrap.min.css">
+      <script type="text/javascript" src="./css_modalboxtextarea/bootstrap.min.js.descarga"></script>
+
+  <style id="compiled-css" type="text/css">
+    .launch-modal {
+    margin: 20px;
+}
+
+    /* EOS */
+  </style>
+
+  <script id="insert"></script>
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Button trigger modal -->
+<button class="btn btn-primary btn-lg launch-modal" data-toggle="modal" data-target="#myModal" style="background-color: #e65f00;  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  border-radius: 10px;
+  
+  ">
+  Write a message
+</button>
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title" id="myModalLabel">Direct message to user</h4>
+      </div>
+      <div class="modal-body">
+		<textarea rows="5" cols="20" wrap="soft" name="mensajedelusuario" maxlength="255" id="textareaID" class="form-control" > </textarea>
+        <!-- <textarea id="textareaID" class="form-control"></textarea> -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		
+		
+        <button class="btn btn-primary" type="submit" name="enviar" value="Send message" style="background-color: #e65f00; border-color: #e65f00; ">Send</button> 
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+    <script type="text/javascript">//<![CDATA[
+
+
+$('#myModal').on('shown.bs.modal', function () {
+    $('#textareaID').focus();
+})
+
+
+  //]]></script>
+
+  <script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent){
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: "WV5e7"
+      }], "*")
+    }
+
+    // always overwrite window.name, in case users try to set it manually
+    window.name = "result"
+  </script>
+
+
+
+
+</body></html>

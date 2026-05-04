@@ -1,0 +1,437 @@
+[23-Dec-2019 07:13:12 CST6CDT] PHP Fatal error:  require(): Failed opening required '../../files/bd.php' (include_path='.:/usr/local/php56/pear') in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 4
+[23-Dec-2019 07:13:31 CST6CDT] PHP Fatal error:  require(): Failed opening required '../../files/bd.php' (include_path='.:/usr/local/php56/pear') in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 4
+[23-Dec-2019 07:13:46 CST6CDT] PHP Fatal error:  require(): Failed opening required '../../files/bd.php' (include_path='.:/usr/local/php56/pear') in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 4
+[27-Dec-2019 11:20:28 CST6CDT] PHP Parse error:  syntax error, unexpected '}' in /home/customer/www/languageexchanges.com/public_html/user/me.php on line 249
+[27-Dec-2019 15:10:51 CST6CDT] PHP Parse error:  syntax error, unexpected end of file in /home/customer/www/languageexchanges.com/public_html/user/pa.php on line 620
+[28-Dec-2019 14:08:45 CST6CDT] PHP Parse error:  syntax error, unexpected '$latitud1' (T_VARIABLE), expecting ',' or ';' in /home/customer/www/languageexchanges.com/public_html/user/getgpsposition.php on line 41
+[16-Jan-2020 08:33:45 CST6CDT] PHP Parse error:  syntax error, unexpected end of file in /home/customer/www/languageexchanges.com/public_html/user/me.php on line 393
+[05-May-2020 07:56:21 CST6CDT] PHP Fatal error:  require(): Failed opening required '../cpm.class.php' (include_path='.:/usr/local/php56/pear') in /home/customer/www/languageexchanges.com/public_html/pms/unread.php on line 6
+[05-May-2020 08:18:09 CST6CDT] PHP Deprecated:  mysql_query(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/customer/www/languageexchanges.com/public_html/user/me.php on line 214
+[05-May-2020 09:14:56 CST6CDT] PHP Parse error:  syntax error, unexpected '$fila3' (T_VARIABLE) in /home/customer/www/languageexchanges.com/public_html/user/me.php on line 221
+[05-May-2020 09:55:10 CST6CDT] PHP Parse error:  syntax error, unexpected '$query77' (T_VARIABLE) in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 17
+[05-May-2020 11:02:00 CST6CDT] PHP Parse error:  syntax error, unexpected '$nameofuser2017' (T_VARIABLE) in /home/customer/www/languageexchanges.com/public_html/user/u.php on line 248
+[12-May-2020 06:28:20 CST6CDT] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/customer/www/languageexchanges.com/public_html/user/me.php on line 333
+[12-May-2020 06:28:39 CST6CDT] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/customer/www/languageexchanges.com/public_html/user/me.php on line 333
+[12-May-2020 06:29:48 CST6CDT] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/customer/www/languageexchanges.com/public_html/user/me.php on line 331
+[15-Jan-2021 11:33:08 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/customer/www/languageexchanges.com/public_html/user/u.php on line 263
+[27-Jan-2021 21:52:16 UTC] PHP Parse error:  syntax error, unexpected '"' in /home/customer/www/languageexchanges.com/public_html/user/verify_email.php on line 19
+[27-Jan-2021 22:03:05 UTC] PHP Parse error:  syntax error, unexpected 'font' (T_STRING), expecting ',' or ';' in /home/customer/www/languageexchanges.com/public_html/user/me.php on line 422
+[27-Jan-2021 22:03:58 UTC] PHP Parse error:  syntax error, unexpected 'font' (T_STRING), expecting ',' or ';' in /home/customer/www/languageexchanges.com/public_html/user/me.php on line 422
+[27-Jan-2021 22:39:25 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/customer/www/languageexchanges.com/public_html/user/verify_email.php on line 29
+[14-May-2021 14:16:57 UTC] PHP Parse error:  syntax error, unexpected '$size' (T_VARIABLE) in /home/customer/www/languageexchanges.com/public_html/user/me.php on line 20
+[07-Jul-2021 10:21:40 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/customer/www/languageexchanges.com/public_html/user/me.php on line 1266
+[22-Jul-2022 19:26:41 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SMTP has a deprecated constructor in /home/customer/www/languageexchanges.com/public_html/emailtemplates/class.smtp.php on line 24
+[20-Apr-2024 20:51:15 UTC] PHP Parse error:  syntax error in /home/customer/www/languageexchanges.com/public_html/user/me.php on line 203
+[20-Apr-2024 21:58:04 UTC] PHP Parse error:  syntax error in /home/customer/www/languageexchanges.com/public_html/user/me.php on line 899
+[23-Apr-2024 11:07:13 UTC] PHP Parse error:  syntax error in /home/customer/www/languageexchanges.com/public_html/user/u.php on line 893
+[26-Apr-2024 20:57:22 UTC] PHP Fatal error:  require(): Failed opening required './header_simplified.html' (include_path='.:/usr/local/php73/pear') in /home/customer/www/languageexchanges.com/public_html/templates/header.php on line 164
+[27-Apr-2024 10:30:44 CST6CDT] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/user/me.php on line 1116
+[27-Apr-2024 10:30:47 CST6CDT] PHP Fatal error:  Uncaught DivisionByZeroError: Division by zero in /home/customer/www/languageexchanges.com/public_html/user/u.php:498
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/u.php on line 498
+[27-Apr-2024 10:32:37 CST6CDT] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/user/me.php on line 1116
+[27-Apr-2024 10:56:00 CST6CDT] PHP Fatal error:  Uncaught DivisionByZeroError: Division by zero in /home/customer/www/languageexchanges.com/public_html/user/u.php:498
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/u.php on line 498
+[27-Apr-2024 10:56:19 CST6CDT] PHP Fatal error:  Uncaught DivisionByZeroError: Division by zero in /home/customer/www/languageexchanges.com/public_html/user/me.php:1017
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/me.php on line 1017
+[27-Apr-2024 11:04:21 CST6CDT] PHP Fatal error:  Uncaught DivisionByZeroError: Division by zero in /home/customer/www/languageexchanges.com/public_html/user/u.php:498
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/u.php on line 498
+[27-Apr-2024 11:06:05 CST6CDT] PHP Fatal error:  Uncaught Error: Undefined constant "php" in /home/customer/www/languageexchanges.com/public_html/user/u.php:928
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/u.php on line 928
+[27-Apr-2024 11:06:59 CST6CDT] PHP Fatal error:  Uncaught Error: Undefined constant "php" in /home/customer/www/languageexchanges.com/public_html/user/u.php:928
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/u.php on line 928
+[27-Apr-2024 11:07:44 CST6CDT] PHP Fatal error:  Uncaught Error: Undefined constant "php" in /home/customer/www/languageexchanges.com/public_html/user/u.php:928
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/u.php on line 928
+[27-Apr-2024 11:09:09 CST6CDT] PHP Fatal error:  Uncaught Error: Undefined constant "php" in /home/customer/www/languageexchanges.com/public_html/user/u.php:928
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/u.php on line 928
+[27-Apr-2024 11:15:41 CST6CDT] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/user/me.php on line 1122
+[27-Apr-2024 11:19:19 CST6CDT] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/user/me.php on line 1122
+[27-Apr-2024 11:36:51 CST6CDT] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/user/me.php on line 1122
+[28-Apr-2024 06:41:00 CST6CDT] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/user/u.php on line 1102
+[28-Apr-2024 06:49:15 CST6CDT] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/user/me.php on line 1122
+[28-Apr-2024 06:51:19 CST6CDT] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/user/me.php on line 1122
+[29-Apr-2024 18:21:31 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[29-Apr-2024 18:21:50 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[29-Apr-2024 18:34:02 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[29-Apr-2024 18:34:05 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[29-Apr-2024 18:34:08 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[30-Apr-2024 14:29:09 UTC] PHP Parse error:  Unclosed '{' on line 60 in /home/customer/www/languageexchanges.com/public_html/user/me.php on line 1782
+[01-May-2024 18:16:50 CST6CDT] PHP Deprecated:  Creation of dynamic property PHPMailer::$SMTPSecure is deprecated in /home/customer/www/languageexchanges.com/public_html/emailtemplates/email.php on line 21
+[03-May-2024 15:27:53 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[08-May-2024 13:32:05 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[08-May-2024 13:32:08 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[09-May-2024 13:17:03 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[11-May-2024 03:54:35 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[16-May-2024 12:16:56 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[21-May-2024 19:21:12 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[21-May-2024 21:09:03 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[22-May-2024 21:28:42 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[31-May-2024 00:30:48 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[01-Jun-2024 14:46:07 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[03-Jun-2024 02:06:35 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[13-Jun-2024 23:36:12 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[16-Jun-2024 17:22:12 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[16-Jun-2024 17:22:16 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[30-Jun-2024 00:37:30 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[05-Jul-2024 20:12:55 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_num_rows(): Argument #1 ($result) must be of type mysqli_result, bool given in /home/customer/www/languageexchanges.com/public_html/user/me.php:451
+Stack trace:
+#0 /home/customer/www/languageexchanges.com/public_html/user/me.php(451): mysqli_num_rows(false)
+#1 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/me.php on line 451
+[05-Jul-2024 20:14:59 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_num_rows(): Argument #1 ($result) must be of type mysqli_result, bool given in /home/customer/www/languageexchanges.com/public_html/user/me.php:455
+Stack trace:
+#0 /home/customer/www/languageexchanges.com/public_html/user/me.php(455): mysqli_num_rows(false)
+#1 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/me.php on line 455
+[05-Jul-2024 20:22:19 UTC] PHP Parse error:  syntax error, unexpected token "/" in /home/customer/www/languageexchanges.com/public_html/user/me.php on line 457
+[05-Jul-2024 20:52:14 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_num_rows(): Argument #1 ($result) must be of type mysqli_result, bool given in /home/customer/www/languageexchanges.com/public_html/user/me.php:106
+Stack trace:
+#0 /home/customer/www/languageexchanges.com/public_html/user/me.php(106): mysqli_num_rows(false)
+#1 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/me.php on line 106
+[11-Jul-2024 22:37:34 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[17-Jul-2024 12:00:48 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[22-Jul-2024 13:04:56 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[22-Jul-2024 20:15:09 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[03-Aug-2024 17:46:34 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_set_charset(): Argument #1 ($mysql) must be of type mysqli, bool given in /home/customer/www/languageexchanges.com/public_html/files/bd.php:21
+Stack trace:
+#0 /home/customer/www/languageexchanges.com/public_html/files/bd.php(21): mysqli_set_charset(false, 'utf8')
+#1 /home/customer/www/languageexchanges.com/public_html/user/u.php(29): require('/home/customer/...')
+#2 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/files/bd.php on line 21
+[03-Aug-2024 17:46:36 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_set_charset(): Argument #1 ($mysql) must be of type mysqli, bool given in /home/customer/www/languageexchanges.com/public_html/files/bd.php:21
+Stack trace:
+#0 /home/customer/www/languageexchanges.com/public_html/files/bd.php(21): mysqli_set_charset(false, 'utf8')
+#1 /home/customer/www/languageexchanges.com/public_html/templates/header.php(4): require('/home/customer/...')
+#2 /home/customer/www/languageexchanges.com/public_html/user/me.php(10): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/files/bd.php on line 21
+[12-Aug-2024 23:16:54 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[18-Aug-2024 05:19:51 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[23-Aug-2024 09:29:13 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[23-Aug-2024 14:14:54 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[07-Sep-2024 20:29:56 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[14-Sep-2024 06:58:41 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[19-Sep-2024 09:30:58 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[19-Sep-2024 23:48:57 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[25-Sep-2024 06:15:12 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[25-Sep-2024 06:31:15 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[30-Sep-2024 18:40:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function lenght() in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo.php:204
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo.php on line 204
+[14-Oct-2024 12:12:36 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[14-Oct-2024 12:12:38 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[15-Oct-2024 11:35:16 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_num_rows(): Argument #1 ($result) must be of type mysqli_result, bool given in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo2.php:232
+Stack trace:
+#0 /home/customer/www/languageexchanges.com/public_html/user/me_nuevo2.php(232): mysqli_num_rows(false)
+#1 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo2.php on line 232
+[15-Oct-2024 12:11:27 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_num_rows(): Argument #1 ($result) must be of type mysqli_result, bool given in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo2.php:232
+Stack trace:
+#0 /home/customer/www/languageexchanges.com/public_html/user/me_nuevo2.php(232): mysqli_num_rows(false)
+#1 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo2.php on line 232
+[15-Oct-2024 17:40:56 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[15-Oct-2024 19:40:23 UTC] PHP Fatal error:  Uncaught TypeError: array_count_values(): Argument #1 ($array) must be of type array, string given in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo2.php:293
+Stack trace:
+#0 /home/customer/www/languageexchanges.com/public_html/user/me_nuevo2.php(293): array_count_values('cat')
+#1 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo2.php on line 293
+[16-Oct-2024 06:46:09 UTC] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, string given in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo2.php:420
+Stack trace:
+#0 /home/customer/www/languageexchanges.com/public_html/user/me_nuevo2.php(420): array_push('spa')
+#1 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo2.php on line 420
+[16-Oct-2024 06:46:41 UTC] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, string given in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo2.php:420
+Stack trace:
+#0 /home/customer/www/languageexchanges.com/public_html/user/me_nuevo2.php(420): array_push('spa', Array)
+#1 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo2.php on line 420
+[16-Oct-2024 07:16:00 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo2.php:1244
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo2.php on line 1244
+[16-Oct-2024 11:51:53 UTC] PHP Fatal error:  Uncaught TypeError: array_pop(): Argument #1 ($array) must be of type array, string given in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo2.php:444
+Stack trace:
+#0 /home/customer/www/languageexchanges.com/public_html/user/me_nuevo2.php(444): array_pop('eu')
+#1 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo2.php on line 444
+[16-Oct-2024 11:53:31 UTC] PHP Fatal error:  Uncaught TypeError: array_pop(): Argument #1 ($array) must be of type array, string given in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo2.php:444
+Stack trace:
+#0 /home/customer/www/languageexchanges.com/public_html/user/me_nuevo2.php(444): array_pop('eu')
+#1 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo2.php on line 444
+[16-Oct-2024 11:53:34 UTC] PHP Fatal error:  Uncaught TypeError: array_pop(): Argument #1 ($array) must be of type array, string given in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo2.php:444
+Stack trace:
+#0 /home/customer/www/languageexchanges.com/public_html/user/me_nuevo2.php(444): array_pop('eu')
+#1 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo2.php on line 444
+[16-Oct-2024 19:13:08 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[22-Oct-2024 02:27:03 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[28-Oct-2024 00:47:53 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[28-Oct-2024 04:52:34 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[19-Nov-2024 14:05:05 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[24-Nov-2024 14:12:24 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[29-Nov-2024 07:33:34 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[29-Nov-2024 10:49:05 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[19-Dec-2024 18:51:40 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[25-Dec-2024 02:01:25 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[29-Dec-2024 20:09:20 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[29-Dec-2024 23:31:47 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[13-Jan-2025 09:20:27 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[16-Jan-2025 21:08:23 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[18-Jan-2025 14:33:56 UTC] PHP Parse error:  syntax error, unexpected token "*", expecting end of file in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo5.php on line 540
+[22-Jan-2025 11:02:37 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[27-Jan-2025 19:46:52 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[27-Jan-2025 20:40:25 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[29-Jan-2025 11:53:28 UTC] PHP Parse error:  Unmatched '}' in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo6.php on line 100
+[29-Jan-2025 12:56:43 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/customer/www/languageexchanges.com/public_html/user/usu2.php on line 348
+[29-Jan-2025 18:35:40 UTC] PHP Parse error:  Unclosed '{' on line 187 in /home/customer/www/languageexchanges.com/public_html/user/usu3.php on line 2518
+[29-Jan-2025 18:58:14 UTC] PHP Parse error:  syntax error, unexpected token "or" in /home/customer/www/languageexchanges.com/public_html/user/usu3.php on line 433
+[29-Jan-2025 18:58:43 UTC] PHP Parse error:  syntax error, unexpected token "or" in /home/customer/www/languageexchanges.com/public_html/user/usu3.php on line 434
+[05-Feb-2025 18:53:46 UTC] PHP Parse error:  Unclosed '{' on line 58 does not match ')' in /home/customer/www/languageexchanges.com/public_html/user/timeshift.php on line 59
+[05-Feb-2025 18:54:03 UTC] PHP Parse error:  Unclosed '{' on line 58 does not match ')' in /home/customer/www/languageexchanges.com/public_html/user/timeshift.php on line 59
+[08-Feb-2025 14:42:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function obtenerFechaHora() in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo9.php:841
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo9.php on line 841
+[13-Feb-2025 02:22:49 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[15-Feb-2025 16:33:15 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_num_rows(): Argument #1 ($result) must be of type mysqli_result, bool given in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo12.php:1571
+Stack trace:
+#0 /home/customer/www/languageexchanges.com/public_html/user/me_nuevo12.php(1571): mysqli_num_rows(false)
+#1 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo12.php on line 1571
+[15-Feb-2025 16:33:59 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_num_rows(): Argument #1 ($result) must be of type mysqli_result, bool given in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo12.php:1571
+Stack trace:
+#0 /home/customer/www/languageexchanges.com/public_html/user/me_nuevo12.php(1571): mysqli_num_rows(false)
+#1 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo12.php on line 1571
+[15-Feb-2025 16:34:01 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_num_rows(): Argument #1 ($result) must be of type mysqli_result, bool given in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo12.php:1571
+Stack trace:
+#0 /home/customer/www/languageexchanges.com/public_html/user/me_nuevo12.php(1571): mysqli_num_rows(false)
+#1 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo12.php on line 1571
+[15-Feb-2025 16:34:44 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_num_rows(): Argument #1 ($result) must be of type mysqli_result, bool given in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo12.php:1572
+Stack trace:
+#0 /home/customer/www/languageexchanges.com/public_html/user/me_nuevo12.php(1572): mysqli_num_rows(false)
+#1 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo12.php on line 1572
+[15-Feb-2025 16:35:16 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_fetch_array(): Argument #1 ($result) must be of type mysqli_result, bool given in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo12.php:1574
+Stack trace:
+#0 /home/customer/www/languageexchanges.com/public_html/user/me_nuevo12.php(1574): mysqli_fetch_array(false)
+#1 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo12.php on line 1574
+[15-Feb-2025 16:35:18 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_fetch_array(): Argument #1 ($result) must be of type mysqli_result, bool given in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo12.php:1574
+Stack trace:
+#0 /home/customer/www/languageexchanges.com/public_html/user/me_nuevo12.php(1574): mysqli_fetch_array(false)
+#1 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/me_nuevo12.php on line 1574
+[23-Feb-2025 15:17:44 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[28-Feb-2025 17:55:14 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[01-Mar-2025 02:09:58 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[17-Apr-2025 01:12:54 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[08-May-2025 21:44:39 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12
+[24-Jun-2025 18:17:29 UTC] PHP Parse error:  Unclosed '{' on line 1570 in /home/customer/www/languageexchanges.com/public_html/user/me.php on line 2757
+[16-Jul-2025 21:42:45 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/customer/www/languageexchanges.com/public_html/user/partners.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/user/partners.php on line 12

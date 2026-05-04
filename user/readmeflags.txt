@@ -1,0 +1,1 @@
+uso: introducir en el html <img class="language language-xx"/>

@@ -1,0 +1,87 @@
+[27-Feb-2026 16:55:41 UTC] PHP Fatal error:  Uncaught Exception: Unknown or bad format () in /home/customer/www/languageexchanges.com/public_html/trackerproposals/sent-studentcreateproposal.php:244
+Stack trace:
+#0 /home/customer/www/languageexchanges.com/public_html/trackerproposals/sent-studentcreateproposal.php(244): DateInterval->__construct('')
+#1 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/trackerproposals/sent-studentcreateproposal.php on line 244
+[27-Feb-2026 16:56:09 UTC] PHP Fatal error:  Uncaught Exception: Unknown or bad format () in /home/customer/www/languageexchanges.com/public_html/trackerproposals/sent-studentcreateproposal.php:244
+Stack trace:
+#0 /home/customer/www/languageexchanges.com/public_html/trackerproposals/sent-studentcreateproposal.php(244): DateInterval->__construct('')
+#1 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/trackerproposals/sent-studentcreateproposal.php on line 244
+[25-Mar-2026 19:27:05 UTC] PHP Deprecated:  strlen(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/trackerproposals/studentprepaymentmultiple.php on line 115
+[27-Apr-2026 15:20:32 UTC] PHP Deprecated:  strlen(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/trackerproposals/studentprepaymentmultiple.php on line 115
+[27-Apr-2026 15:22:53 UTC] PHP Deprecated:  strlen(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/trackerproposals/studentprepaymentmultiple.php on line 115
+[27-Apr-2026 16:27:14 UTC] PHP Deprecated:  strlen(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/trackerproposals/studentprepaymentmultiple.php on line 115
+[28-Apr-2026 19:12:40 UTC] PHP Deprecated:  strlen(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/trackerproposals/studentprepaymentmultiple.php on line 115
+[01-May-2026 09:29:05 UTC] PHP Deprecated:  strlen(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/trackerproposals/studentprepaymentmultiple.php on line 115
+[01-May-2026 09:30:51 UTC] PHP Deprecated:  strlen(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/trackerproposals/studentprepaymentmultiple.php on line 115
+[01-May-2026 09:31:40 UTC] PHP Deprecated:  strlen(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/trackerproposals/studentprepaymentmultiple.php on line 115
+[01-May-2026 09:33:03 UTC] PHP Deprecated:  strlen(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/trackerproposals/studentprepaymentmultiple.php on line 115
+[01-May-2026 09:34:24 UTC] PHP Deprecated:  strlen(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/trackerproposals/studentprepaymentmultiple.php on line 115
+[01-May-2026 12:53:14 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/trackerproposals/studentpayment.php on line 12
+[01-May-2026 12:53:14 UTC] PHP Deprecated:  base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/trackerproposals/studentpayment.php on line 20
+[01-May-2026 12:53:19 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/trackerproposals/studentpayment.php on line 12
+[01-May-2026 12:53:19 UTC] PHP Deprecated:  base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/trackerproposals/studentpayment.php on line 20
+[01-May-2026 15:15:28 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 6 in /home/customer/www/languageexchanges.com/public_html/trackerproposals/listofqueries.php:13
+Stack trace:
+#0 /home/customer/www/languageexchanges.com/public_html/trackerproposals/listofqueries.php(13): mysqli_query(Object(mysqli), 'SELECT count(t....')
+#1 /home/customer/www/languageexchanges.com/public_html/trackerproposals/sent-pendingpayments.php(8): require('/home/customer/...')
+#2 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/trackerproposals/listofqueries.php on line 13
+[01-May-2026 15:15:54 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 6 in /home/customer/www/languageexchanges.com/public_html/trackerproposals/listofqueries.php:13
+Stack trace:
+#0 /home/customer/www/languageexchanges.com/public_html/trackerproposals/listofqueries.php(13): mysqli_query(Object(mysqli), 'SELECT count(t....')
+#1 /home/customer/www/languageexchanges.com/public_html/trackerproposals/sent-pendingpayments.php(8): require('/home/customer/...')
+#2 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/trackerproposals/listofqueries.php on line 13
+[01-May-2026 15:15:56 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 6 in /home/customer/www/languageexchanges.com/public_html/trackerproposals/listofqueries.php:13
+Stack trace:
+#0 /home/customer/www/languageexchanges.com/public_html/trackerproposals/listofqueries.php(13): mysqli_query(Object(mysqli), 'SELECT count(t....')
+#1 /home/customer/www/languageexchanges.com/public_html/trackerproposals/sent-pendingpayments.php(8): require('/home/customer/...')
+#2 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/trackerproposals/listofqueries.php on line 13
+[01-May-2026 15:19:20 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '<=t.start_time_unix
+    ORDER BY t.start_time_unix ASC' at line 8 in /home/customer/www/languageexchanges.com/public_html/trackerproposals/sent-pendingpayments.php:43
+Stack trace:
+#0 /home/customer/www/languageexchanges.com/public_html/trackerproposals/sent-pendingpayments.php(43): mysqli_query(Object(mysqli), '\n    SELECT t.*...')
+#1 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/trackerproposals/sent-pendingpayments.php on line 43
+[01-May-2026 15:24:36 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '<=t.start_time_unix
+    ORDER BY t.start_time_unix ASC' at line 8 in /home/customer/www/languageexchanges.com/public_html/trackerproposals/sent-pendingpayments.php:43
+Stack trace:
+#0 /home/customer/www/languageexchanges.com/public_html/trackerproposals/sent-pendingpayments.php(43): mysqli_query(Object(mysqli), '\n    SELECT t.*...')
+#1 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/trackerproposals/sent-pendingpayments.php on line 43
+[01-May-2026 15:28:41 UTC] PHP Parse error:  syntax error, unexpected double-quoted string "'<=t.start_time_unix" in /home/customer/www/languageexchanges.com/public_html/trackerproposals/listofqueries.php on line 103
+[01-May-2026 15:30:53 UTC] PHP Parse error:  syntax error, unexpected double-quoted string "'<=t.start_time_unix" in /home/customer/www/languageexchanges.com/public_html/trackerproposals/listofqueries.php on line 105
+[01-May-2026 15:30:56 UTC] PHP Parse error:  syntax error, unexpected double-quoted string "'<=t.start_time_unix" in /home/customer/www/languageexchanges.com/public_html/trackerproposals/listofqueries.php on line 105
+[01-May-2026 15:34:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''<=t.start_time_unix
+    ORDER BY t.start_time_unix ASC' at line 8 in /home/customer/www/languageexchanges.com/public_html/trackerproposals/sent-pendingpayments.php:45
+Stack trace:
+#0 /home/customer/www/languageexchanges.com/public_html/trackerproposals/sent-pendingpayments.php(45): mysqli_query(Object(mysqli), '\n    SELECT t.*...')
+#1 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/trackerproposals/sent-pendingpayments.php on line 45
+[01-May-2026 15:58:20 UTC] PHP Parse error:  syntax error, unexpected token ":" in /home/customer/www/languageexchanges.com/public_html/trackerproposals/dashboard.php on line 83
+[01-May-2026 16:25:02 UTC] PHP Parse error:  syntax error, unexpected variable "$result" in /home/customer/www/languageexchanges.com/public_html/trackerproposals/sent-futureclasses.php on line 41
+[01-May-2026 17:38:32 UTC] PHP Deprecated:  mysqli_query(): Passing null to parameter #2 ($query) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/trackerproposals/received-pendingproposals.php on line 36
+[01-May-2026 17:38:32 UTC] PHP Fatal error:  Uncaught ValueError: mysqli_query(): Argument #2 ($query) cannot be empty in /home/customer/www/languageexchanges.com/public_html/trackerproposals/received-pendingproposals.php:36
+Stack trace:
+#0 /home/customer/www/languageexchanges.com/public_html/trackerproposals/received-pendingproposals.php(36): mysqli_query(Object(mysqli), '')
+#1 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/trackerproposals/received-pendingproposals.php on line 36
+[01-May-2026 17:50:15 UTC] PHP Parse error:  syntax error, unexpected token "*", expecting end of file in /home/customer/www/languageexchanges.com/public_html/trackerproposals/dashboard.php on line 124
+[01-May-2026 17:50:17 UTC] PHP Parse error:  syntax error, unexpected token "*", expecting end of file in /home/customer/www/languageexchanges.com/public_html/trackerproposals/dashboard.php on line 124
+[01-May-2026 17:50:46 UTC] PHP Parse error:  syntax error, unexpected token "*", expecting end of file in /home/customer/www/languageexchanges.com/public_html/trackerproposals/dashboard.php on line 124
+[01-May-2026 18:01:42 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/customer/www/languageexchanges.com/public_html/trackerproposals/received-futureclasses.php on line 60
+[01-May-2026 18:02:27 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY t.start_time_unix ASC' at line 8 in /home/customer/www/languageexchanges.com/public_html/trackerproposals/received-futureclasses.php:45
+Stack trace:
+#0 /home/customer/www/languageexchanges.com/public_html/trackerproposals/received-futureclasses.php(45): mysqli_query(Object(mysqli), '\n    SELECT t.*...')
+#1 {main}
+  thrown in /home/customer/www/languageexchanges.com/public_html/trackerproposals/received-futureclasses.php on line 45
+[03-May-2026 08:12:50 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/trackerproposals/received-infopayments.php on line 421
+[03-May-2026 08:12:50 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/trackerproposals/received-infopayments.php on line 421
+[03-May-2026 08:12:50 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/trackerproposals/received-infopayments.php on line 421
+[03-May-2026 08:12:50 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/trackerproposals/received-infopayments.php on line 421
+[03-May-2026 08:12:50 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/trackerproposals/received-infopayments.php on line 421
+[03-May-2026 08:12:50 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/customer/www/languageexchanges.com/public_html/trackerproposals/received-infopayments.php on line 421
+[03-May-2026 11:14:36 UTC] PHP Parse error:  syntax error, unexpected token "=" in /home/customer/www/languageexchanges.com/public_html/trackerproposals/received-infopreviouslessonspendingwithdrawal.php on line 52
